@@ -4,12 +4,17 @@
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+    overflow: hidden; 
+}
+
+
 body {
     display: flex;                  
     justify-content: center;        
     align-items: center;           
-    height: 100vh;                 
-    background-size: cover;         
+    height: calc(var(--vh, 1vh) * 100);    background-size: cover;         
     background-position: center;    
     background-attachment: fixed;   
     overflow: hidden;               
@@ -24,6 +29,10 @@ body {
 
 .text-sm {
     color: #614380;
+}
+
+input, textarea {
+    font-size: 16px; 
 }
 
 input, textarea {

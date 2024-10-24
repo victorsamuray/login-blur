@@ -7,3 +7,11 @@ password.addEventListener('input', (e) => {
     const blurValue = 20 - length * 2
     background.style.filter = `blur(${blurValue}px)`
 })
+
+function setViewportHeight() {
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+}
+
+window.addEventListener('resize', setViewportHeight);
+setViewportHeight();
+
